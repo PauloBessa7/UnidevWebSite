@@ -1,0 +1,51 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.scale-01:hover {
+    scale: 1.05;
+    transition-duration: 0.3s;
+}
+
+body {
+    background: linear-gradient(to bottom, #F4F4F4 20%, var(--azul) 50%);
+}
+
+.video-unidev-container {
+    width: 70%;
+    margin: auto;
+}
+
+.video-unidev {
+    width: 100%;
+    height: 550px;
+}
+
+.mg-top {
+    margin-top: 150px;
+}
+
+.footer-container {
+    height: 300px;
+}
+
+.color-blue {
+    color: #7091D4;
+}
+
+:root {
+    --azul: #7091D4;
+    --preto: #010508;
+    --branco: #F4F4F4;
+}
+
+.navbar-nav {
+    --bs-nav-link-color: white;
+    --bs-nav-link-hover-color: white;
+}
+
+@media (max-width: 992px) {
+    .video-unidev-container {
+        width: 100%;
+    }
+}

@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleTeste.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark" data-bs-theme="dark">
+        <div class="container ">
+            <a class="navbar-brand" href="#">
+                <img src="image/logo-unidev-dark.jpeg" alt="Bootstrap" width="30" height="24">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutPage.html">Sobre</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Eventos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="paginaEvento.html">Work in Teck 4</a></li>
+                            <li><a class="dropdown-item" href="paginaEvento.html">Work in Teck 3</a></li>
+                            <li><a class="dropdown-item" href="paginaEvento.html">Work in Teck 2</a></li>
+                            <li><a class="dropdown-item" href="paginaEvento.html">Work in Teck 1</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="consultaEventos.html">Meus eventos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galleryPage.html">Galeria</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-5 pt-5 ">
+        <div class="row justify-content-around ">
+            <div class="col-xxl-8 col-xl-9 col-md-10">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="image/thumb-1920-976901.jpg" class="d-block w-100 object-fit-cover border rounded"
+                                alt="...">
+                        </div>
+                        <!-- <div class="carousel-item">
+                        <img src="image/logo-unidev-dark.jpeg" class="d-block w-100 " style="max-width: 40%;" alt="...">
+                      </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-md-10 col-xl-9">
+                <h1 class="display-4">Work in Tech 4</h1>
+                <p class="mt-3 ">Prepare-se para o nosso Hackathon de Inovação Tecnológica! Durante 48
+                    horas, equipes irão desenvolver soluções inovadoras para desafios reais. Não perca a
+                    chance de participar, aprender e criar algo incrível. Inscreva-se agora e mostre seu
+                    talento!</p>
+                <form class="mt-4">
+                    <legend>Fazer inscrição no evento</legend>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Registro do Aluno (RA)</label>
+                        <input type="number" class="form-control" id="exampleInputPassword1">
+                        <div id="emailHelp" class="form-text">Exemplo : 231678862</div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Aceito os <a href="#">termos</a></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                </form>
+                <p class="mt-3 link-offset-3"><a href="" class="text-danger">Consultar minha inscrição</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== Sessao de apresentacao e informações do evento ===== -->
+
+    <!-- <div class="container mt-5 text-center">
+        <div class="row justify-content-around gap-3 row-cols-lg-5">
+            <button type="button" class="col btn bg-primary-subtle text-primary-emphasis ">Apresentação</button>
+            <button type="button" class="col btn bg-primary-subtle text-primary-emphasis">Cronograma</button>
+            <button type="button" class="col btn bg-primary-subtle text-primary-emphasis">Palestrantes</button>
+            <button type="button" class="col btn bg-primary-subtle text-primary-emphasis">Workshop's</button>
+        </div>
+    </div> -->
+
+    <!-- ==== APRESENTAÇÃO ==== -->
+
+    <div class="container mt-5 mb-5">
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Apresentação
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p class="lh-lg">Bem-vindo ao Hackathon de Inovação Tecnológica da Unidev! Este evento, que
+                            acontecerá nos próximos dias, tem como objetivo reunir estudantes de tecnologia para
+                            enfrentar desafios reais e desenvolver soluções inovadoras. Durante 48 horas intensas, as
+                            equipes terão a oportunidade de aprender, colaborar e criar projetos incríveis que podem
+                            impactar a sociedade de maneira significativa. A Unidev está comprometida em promover um
+                            ambiente de aprendizado prático e criativo, incentivando a troca de conhecimentos e
+                            experiências entre os participantes.</p>
+
+                        <p class="lh-lg">Neste Hackathon, os participantes terão acesso a uma série de workshops e
+                            sessões de mentoria com profissionais experientes e renomados da indústria tecnológica. Os
+                            workshops abordarão temas como desenvolvimento ágil, ferramentas de colaboração online,
+                            design thinking, machine learning e técnicas de apresentação eficaz. Essas atividades foram
+                            cuidadosamente planejadas para fornecer aos participantes as habilidades e conhecimentos
+                            necessários para enfrentar os desafios do evento e desenvolver soluções inovadoras e
+                            viáveis.</p>
+
+                        <p class="lh-lg">Além das atividades técnicas, o Hackathon de Inovação Tecnológica da Unidev
+                            também oferece uma excelente oportunidade de networking. Os participantes poderão interagir
+                            com colegas de diferentes áreas de tecnologia, estabelecendo conexões valiosas que podem
+                            resultar em futuras colaborações e oportunidades profissionais. Este evento promete ser uma
+                            experiência enriquecedora e transformadora para todos os envolvidos, proporcionando uma
+                            plataforma para a criatividade, inovação e crescimento profissional.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Cronograma
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h2>Dia 1</h2>
+                        <p>
+                            <strong>19:00 - 19:30</strong>: Credenciamento e Café de Boas-Vindas<br>
+                            <strong>19:30 - 20:00</strong>: Abertura Oficial e Apresentação dos Desafios<br>
+                            <strong>20:00 - 20:30</strong>: Formação das Equipes e Brainstorming<br>
+                            <strong>20:30 - 21:30</strong>: Workshop 1: Introdução ao Desenvolvimento Ágil<br>
+                            <strong>21:30 - 22:30</strong>: Desenvolvimento de Projetos
+                        </p>
+
+                        <h2>Dia 2</h2>
+                        <p>
+                            <strong>19:00 - 19:30</strong>: Café de Boas-Vindas<br>
+                            <strong>19:30 - 20:00</strong>: Workshop 2: Ferramentas de Colaboração Online<br>
+                            <strong>20:00 - 20:30</strong>: Desenvolvimento de Projetos<br>
+                            <strong>20:30 - 21:00</strong>: Workshop 3: Design Thinking e UX<br>
+                            <strong>21:00 - 21:30</strong>: Desenvolvimento de Projetos<br>
+                            <strong>21:30 - 22:00</strong>: Workshop 4: Introdução ao Machine Learning<br>
+                            <strong>22:00 - 22:30</strong>: Apresentações Finais e Encerramento
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Palestrantes
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>
+                            <strong>Dr. João Silva</strong><br>
+                            <em>Especialidade</em>: Desenvolvimento Ágil<br>
+                            <em>Bio</em>: Dr. João Silva é professor e consultor em metodologias ágeis com mais de 15
+                            anos de experiência na indústria de software.
+                        </p>
+
+                        <p>
+                            <strong>Ana Maria Souza</strong><br>
+                            <em>Especialidade</em>: Ferramentas de Colaboração Online<br>
+                            <em>Bio</em>: Ana Maria é engenheira de software na Google e especialista em ferramentas de
+                            colaboração e produtividade.
+                        </p>
+
+                        <p>
+                            <strong>Carlos Pereira</strong><br>
+                            <em>Especialidade</em>: Design Thinking e UX<br>
+                            <em>Bio</em>: Carlos é designer sênior na UX/UI Labs, com ampla experiência em design
+                            centrado no usuário e inovação.
+                        </p>
+
+                        <p>
+                            <strong>Mariana Costa</strong><br>
+                            <em>Especialidade</em>: Machine Learning<br>
+                            <em>Bio</em>: Mariana é pesquisadora e engenheira de Machine Learning na IBM, focada em
+                            desenvolver soluções inteligentes para problemas complexos.
+                        </p>
+
+                        <p>
+                            <strong>Lucas Almeida</strong><br>
+                            <em>Especialidade</em>: Apresentação de Projetos<br>
+                            <em>Bio</em>: Lucas é coach de apresentações e comunicação, ajudando profissionais a
+                            melhorar suas habilidades de apresentação e persuasão.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                        Workshop's
+                    </button>
+                </h2>
+                <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p>
+                            <strong>Workshop 1: Introdução ao Desenvolvimento Ágil</strong><br>
+                            <em>Palestrante</em>: Dr. João Silva<br>
+                            <em>Descrição</em>: Aprenda os princípios e práticas do desenvolvimento ágil e como
+                            aplicá-los em seus projetos.
+                        </p>
+
+                        <p>
+                            <strong>Workshop 2: Ferramentas de Colaboração Online</strong><br>
+                            <em>Palestrante</em>: Ana Maria Souza<br>
+                            <em>Descrição</em>: Descubra as melhores ferramentas para colaboração em equipe e
+                            produtividade, essenciais para o sucesso em projetos remotos.
+                        </p>
+
+                        <p>
+                            <strong>Workshop 3: Design Thinking e UX</strong><br>
+                            <em>Palestrante</em>: Carlos Pereira<br>
+                            <em>Descrição</em>: Explore técnicas de Design Thinking e como criar experiências de usuário
+                            excepcionais para seus produtos.
+                        </p>
+
+                        <p>
+                            <strong>Workshop 4: Introdução ao Machine Learning</strong><br>
+                            <em>Palestrante</em>: Mariana Costa<br>
+                            <em>Descrição</em>: Uma introdução aos conceitos básicos de Machine Learning e como começar
+                            a implementar modelos em seus projetos.
+                        </p>
+
+                        <p>
+                            <strong>Workshop 5: Apresentação Eficaz de Projetos</strong><br>
+                            <em>Palestrante</em>: Lucas Almeida<br>
+                            <em>Descrição</em>: Melhore suas habilidades de apresentação e aprenda técnicas para
+                            comunicar suas ideias de forma clara e impactante.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <div class="container-fluid bg-dark text-white pt-5 pb-5">
+        <div class="container">
+            <div class="row gap-2 ">
+                <div class="col-md-3">
+                    <img src="image/logo-unidev-dark-removebg-preview.png" style="width: 3rem;" alt="">
+                    <div class="container"></div>
+                    <font style="vertical-align: inherit;">
+                        Esse site foi um teste para estudar o framework Bootstrap, além de poder ter um pequeno projeto
+                        em meu portifólio
+                    </font>
+                </div>
+                <div class="col offset-lg-1">
+                    <h5 class="display-5 fs-3">Eventos</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="" class="link-offset-2 link-underline link-underline-opacity-0">Work in Tech 1</a>
+                        </li>
+                        <li><a href="" class="link-offset-2 link-underline link-underline-opacity-0">Work in Tech 2</a>
+                        </li>
+                        <li><a href="" class="link-offset-2 link-underline link-underline-opacity-0">Work in Tech 3</a>
+                        </li>
+                        <li><a href="paginaEvento.html"
+                                class="link-offset-2 link-underline link-underline-opacity-0">Work in Tech 4</a>
+                        </li>
+                        <li><a href="" class="link-offset-2 link-underline link-underline-opacity-0">VER MAIS</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5 class="display-5 fs-3">Sobre</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="#sessao-sobre" class="link-offset-2 link-underline link-underline-opacity-0">Quem
+                                Somos</a></li>
+                        <li><a href="" class="link-offset-2 link-underline link-underline-opacity-0">Localização</a>
+                        </li>
+                        <li><a href="" class="link-offset-2 link-underline link-underline-opacity-0">Membros</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5 class="display-5 fs-3">Redes</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="">Linkedin</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">FaceBook</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
