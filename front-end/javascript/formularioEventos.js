@@ -136,7 +136,7 @@ function confirmarEdicao(index){
         let status = document.getElementById('status').value;
         
         if(!validarData(data)){
-            alert("Data incorreta");
+            alert("Data inválida");
             return 0;
         }
 

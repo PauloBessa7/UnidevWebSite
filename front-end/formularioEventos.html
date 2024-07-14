@@ -58,11 +58,26 @@
         </div>
     </nav>
 
-    <div class="overlay" id="overlay">
-        
-    </div>
+    <div class="overlay" id="overlay"></div>
 
-    <h1 class="display-5 text-center m-5 pt-5">UniEventos</h1>
+    <h1 class="display-5 text-center m-5 pt-5">UniEventos - Controle</h1>
+
+    <div class="container-fluid mb-5 pb-5">
+        <div class="container">
+            <form>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-6">
+                            <input type="text" class="form-control" id="textoNomeRA">
+                        </div>
+                        <div class="col-auto">
+                            <button type="button" class="btn btn-primary" onclick="consultar()">Consultar</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4" id="container-eventos">
