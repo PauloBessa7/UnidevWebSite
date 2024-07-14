@@ -17,6 +17,7 @@ body{
     display: none; /* Inicialmente oculto */
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
+    z-index: 1000;
 }
 
 /* Estilo para o popup */
